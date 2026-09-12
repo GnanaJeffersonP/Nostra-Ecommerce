@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Offer Section -->
+    <div id="offer"
+        class="hidden md:flex justify-center p-5 text-2xl items-center gap-6 bg-blue-950 text-white">
+
+        <h2>Sign up and GET 20% OFF for your first order</h2>
+
+        <svg id="closeicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-8 cursor-pointer">
+
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+
+        </svg>
+
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-5">
+
+        <h1 class="text-3xl font-bold">Nostra</h1>
+
+        <div class="flex gap-8">
+
+            <a href="./index.html">Home</a>
+
+            <a href="./collections.html">Collections</a>
+
+            <a href="./contact.html">Contact Us</a>
+
+        </div>
+
+    </nav>
+
+    <hr class="border-black">
+
+
+    <!-- Collections Main Section -->
+    <div class="flex p-5 gap-5 text-sm md:text-base">
+
+
+        <!-- Left Sidebar -->
+        <div class="w-1/5 border-r pr-5">
+
+
+            <!-- Occasion -->
+            <h2 class="text-2xl font-bold hidden md:flex">
+                Occasion
+            </h2>
+
+            <div class="mt-5">
+
+                <p>
+                    <input type="checkbox" class="occasion" value="formal">
+                    Formal
+                </p>
+
+                <p>
+                    <input type="checkbox" class="occasion" value="casual">
+                    Casual
+                </p>
+
+                <p>
+                    <input type="checkbox" class="occasion" value="beach">
+                    Beach
+                </p>
+
+            </div>
+
+
+            <hr class="my-5 border-green-100">
+
+
+            <!-- Colors -->
+            <h2 class="text-2xl font-bold">
+                Colors
+            </h2>
+
+            <div class="mt-5">
+
+                <p>
+                    <input type="checkbox" class="colors" value="Red">
+                    Red
+                </p>
+
+                <p>
+                    <input type="checkbox" class="colors" value="Blue">
+                    Blue
+                </p>
+
+                <p>
+                    <input type="checkbox" class="colors" value="White">
+                    White
+                </p>
+
+                <p>
+                    <input type="checkbox" class="colors" value="Green">
+                    Green
+                </p>
+
+            </div>
+
+
+            <hr class="my-5 border-green-100">
+
+
+            <!-- Arrivals -->
+            <h2 class="text-xl md:text-2xl font-bold">
+                Arrivals
+            </h2>
+
+            <div class="mt-5">
+
+                <p>
+                    <input type="checkbox" class="arrivals" value="New">
+                    New
+                </p>
+
+                <p>
+                    <input type="checkbox" class="arrivals" value="Old">
+                    Old
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="flex-1">
+
+
+            <!-- Search -->
+            <div class="flex gap-3">
+
+                <input id="search" type="text"
+                    placeholder="Search for shirts, t-shirts, jeans..."
+                    class="border rounded w-full p-3">
+
+                <button class="border rounded px-5">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- Product Grid -->
+            <div id="product-container"
+                class="grid grid-cols-2 md:grid-cols-4 gap-5 pt-6">
+
+
+                <!-- Product 1 -->
+                <div class="product"
+                    data-occasion="casual"
+                    data-colors="Red"
+                    data-arrivals="New">
+
+                    <div class="bg-gray-100 relative rounded">
+
+                        <img src="./images/floral.png">
+
+                    </div>
+
+                    <h2 class="font-bold mt-2">
+                        Floral Summer Shirt
+                    </h2>
+
+                    <p>₹799</p>
+
+                    <p>⭐⭐⭐⭐</p>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="product"
+                    data-occasion="casual"
+                    data-colors="Green"
+                    data-arrivals="Old">
+
+                    <div class="bg-gray-100 relative rounded">
+
+                        <img src="./images/party.png">
+
+                    </div>
+
+                    <h2 class="font-bold mt-2">
+                        Summer Green Shirt
+                    </h2>
+
+                    <p>₹699</p>
+
+                    <p>⭐⭐⭐</p>
+
+                </div>
+
+
+                <!-- Product 3 -->
+                <div class="product"
+                    data-occasion="formal"
+                    data-colors="White"
+                    data-arrivals="New">
+
+                    <div class="bg-gray-100 relative rounded">
+
+                        <img src="./images/green.png">
+
+                    </div>
+
+                    <h2 class="font-bold mt-2">
+                        Party Floral Shirt
+                    </h2>
+
+                    <p>₹599</p>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="product"
+                    data-occasion="beach"
+                    data-colors="Blue"
+                    data-arrivals="New">
+
+                    <div class="bg-gray-100 relative rounded">
+
+                        <img src="./images/beach.png">
+
+                    </div>
+
+                    <h2 class="font-bold mt-2">
+                        Beach Vibes Shirt
+                    </h2>
+
+                    <p>₹749</p>
+
+                    <p>⭐⭐⭐⭐</p>
+
+                </div>
+
+
+                <!-- Product 5 -->
+                <div class="product"
+                    data-occasion="formal"
+                    data-colors="White"
+                    data-arrivals="New">
+
+                    <div class="bg-gray-100 relative rounded">
+
+                        <img src="./images/white.png">
+
+                    </div>
+
+                    <h2 class="font-bold mt-2">
+                        Classic White Shirt
+                    </h2>
+
+                    <p>₹699</p>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                </div>
+
+
+                <!-- Product 6 -->
+                <div class="product"
+                    data-occasion="casual"
+                    data-colors="Red"
+                    data-arrivals="Old">
+
+                    <div class="bg-gray-100 relative rounded">
+
+                        <img src="./images/rusty.png">
+
+                    </div>
+
+                    <h2 class="font-bold mt-2">
+                        Rusty brown
+                    </h2>
+
+                    <p>₹899</p>
+
+                    <p>⭐⭐⭐</p>
+
+                </div>
+
+
+                <!-- Product 7 -->
+                <div class="product"
+                    data-occasion="casual"
+                    data-colors="Blue"
+                    data-arrivals="Old">
+
+                    <div class="bg-gray-100 relative rounded aspect-square">
+
+                        <img class="w-full h-full object-contain"
+                            src="./images/jacket.png">
+
+                    </div>
+
+                    <h2 class="font-bold mt-2">
+                        blue jacket
+                    </h2>
+
+                    <p>₹599</p>
+
+                    <p>⭐⭐⭐</p>
+
+                </div>
+
+
+                <!-- Product 8 -->
+                <div class="product"
+                    data-occasion="casual"
+                    data-colors="White"
+                    data-arrivals="Old">
+
+                    <div class="bg-gray-100 relative rounded aspect-square">
+
+                        <img class="w-full h-full object-contain"
+                            src="./images/hoodie.png">
+
+                    </div>
+
+                    <h2 class="font-bold mt-2">
+                        Hoodie
+                    </h2>
+
+                    <p>₹799</p>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Right Side ends here -->
+
+    </div>
+    <!-- Collections Main Section ends here -->
+
+
+    <!-- Horizontal line -->
+    <hr class="border-black">
+
+
+    <!-- Newsletter -->
+    <div class="p-5 pt-10 text-center">
+
+        <p class="text-3xl md:text-4xl font-bold">
+            Join Our News Letter
+        </p>
+
+        <p class="text-lg md:text-xl mt-4">
+            Signup for our email newspaper to get exclusive discount,
+            updates and more!!!
+        </p>
+
+        <input
+            class="w-full mt-5 p-3 border-2 border-gray-800 outline-none"
+            type="email"
+            placeholder="Enter your email...">
+
+        <button
+            class="bg-blue-950 text-white p-2 mt-5 rounded font-semibold"
+            type="button">
+
+            Subscribe →
+
+        </button>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="p-8 bg-blue-950">
+
+        <h1 class="text-5xl font-bold pt-3 text-white">
+            Nostra
+        </h1>
+
+        <p class="text-2xl pt-3 text-white">
+            Nostra brings you stylish, comfortable, and quality fashion
+            for every occasion.
+        </p>
+
+
+        <!-- Social Icons -->
+        <div class="flex gap-10 pt-3 text-white">
+
+
+            <!-- Instagram -->
+            <svg class="w-15 h-15 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <rect width="20" height="20" x="2" y="2" rx="5"></rect>
+
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+
+            </svg>
+
+
+            <!-- Twitter -->
+            <svg class="w-15 h-15 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6
+                    2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5
+                    c2.2 2.6 5.6 4.1 9 4-.9-4.2
+                    4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                </path>
+
+            </svg>
+
+
+            <!-- Facebook -->
+            <svg class="w-15 h-15 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+
+                <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7
+                    a1 1 0 0 1 1-1h3z">
+                </path>
+
+            </svg>
+
+        </div>
+
+
+        <div class="text-xl pt-3">
+
+            <p class="text-white">
+                &copy; 2026 Nostra.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="collection.js"></script>
+
+</body>
+
+</html>

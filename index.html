@@ -1,0 +1,593 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+    <title>Nostra</title>
+</head>
+
+<body>
+
+    <!--offer section-->
+ <body>
+
+    <!-- Offer Section -->
+    <div id="offer"
+        class="hidden md:flex justify-center p-5 text-2xl items-center gap-6 bg-blue-950 text-white">
+
+        <h2>Sign up and GET 20% OFF for your first order</h2>
+
+        <svg id="closeicon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8 cursor-pointer">
+
+            <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+
+        </svg>
+
+    </div>
+        <!-- top section -->
+        <nav class="flex p-5 justify-between items-center text-blue-950">
+
+            <h1 class="text-3xl font-bold">Nostra</h1>
+
+            <div class="flex gap-30 cursor-pointer hidden md:flex">
+
+                <a href="./index.html"
+                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                    Home
+                </a>
+
+                <a href="#new-arrival"
+                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                    New Arrival
+                </a>
+
+                <a href="#mostwanted"
+                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                    Most Wanted
+                </a>
+
+                <a href="./collection.html"
+                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                    Collections
+                </a>
+
+                <a href="./contact.html"
+                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 flex md:hidden cursor-pointer">
+
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
+            </svg>
+
+        </nav>
+
+
+        </div>
+        <!--Sidemenu-->
+  <div id="sidemenu"
+    class="fixed z-20 flex flex-col gap-5 p-5 bg-blue-950 cursor-pointer transform duration-1000"
+    style="width:50%;height:100vh;left:-50%">
+
+    <p id="closemenu"
+        class="text-white font-bold text-2xl absolute right-3">
+        X
+    </p>
+
+    <a href="./index.html"
+        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
+        Home
+    </a>
+
+    <a href="#new-arrival"
+        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
+        New Arrival
+    </a>
+
+    <a href="#mostwanted"
+        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
+        Most Wanted
+    </a>
+
+    <a href="./collection.html"
+        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
+        Collections
+    </a>
+
+    <a href="./contact.html"
+        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
+        Contact Us
+    </a>
+
+</div>
+
+        <div class="p-5 relative">
+
+            <img id="heroimg"
+                class="w-full h-[300px] md:h-[450px] lg:h-[550px] object-cover rounded transition-opacity duration-500"
+                src="./images/hero.png">
+
+            <!-- Hero Content -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white">
+
+                <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold whitespace-nowrap">
+                    Level up your Style with our
+                </h1>
+
+                <p class="font-bold text-lg md:text-xl lg:text-2xl mt-3">
+                    Summer collection
+                </p>
+
+                <p
+                    class="inline-block text-black text-base md:text-lg lg:text-xl bg-white px-3 py-1 rounded mt-4 cursor-pointer hover:bg-gray-200 transition">
+                    Shop now !
+                </p>
+
+            </div>
+
+            <!-- Right Arrow -->
+            <svg id="rightarrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="size-12 md:size-20 lg:size-32 absolute top-1/2 right-6 -translate-y-1/2 text-white font-bold cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+
+            <!-- Left Arrow -->
+            <svg id="leftarrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="size-12 md:size-20 lg:size-32 absolute top-1/2 left-6 -translate-y-1/2 text-white font-bold cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+
+        </div>
+
+        <!--Brands-->
+        <!-- Brands -->
+        <div class="p-5">
+
+            <h1 class="text-3xl font-bold mb-8">Brands</h1>
+
+            <div class="flex justify-between items-center flex-wrap gap-4">
+
+                <div class="text-center">
+                    <img class="w-12 h-12 object-contain mx-auto md:w-30 md:h-30" src="./images/adi.png">
+                    <p class="text-sm md:text-2xl">Adidas</p>
+                </div>
+
+                <div class="text-center">
+                    <img class="w-12 h-12 object-contain mx-auto md:w-30 md:h-30" src="./images/allen.png">
+                    <p class="text-sm md:text-2xl">Allen Solly</p>
+                </div>
+
+                <div class="text-center">
+                    <img class="w-12 h-12 object-contain mx-auto md:w-30 md:h-30" src="./images/puma.png">
+                    <p class="text-sm md:text-2xl">Puma</p>
+                </div>
+
+                <div class="text-center">
+                    <img class="w-12 h-12 object-contain mx-auto md:w-30 md:h-30" src="./images/polo.png">
+                    <p class="text-sm md:text-2xl">U.S. Polo</p>
+                </div>
+
+                <div class="text-center">
+                    <img class="w-12 h-12 object-contain mx-auto md:w-30 md:h-30" src="./images/van.png">
+                    <p class="text-sm md:text-2xl">Van Heusen</p>
+                </div>
+
+                <div class="text-center hidden lg:block">
+                    <img class="w-12 h-12 object-contain mx-auto md:w-30 md:h-30 " src="./images/flying.png">
+                    <p class="text-sm md:text-2xl">Flying Machine</p>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        <!--experience-->
+        <div class="p-5 pt-15 flex justify-between items-center">
+            <div class="text-3xl font-bold">
+                <h1>Fashion focused</h1>
+                <h1>Style That Speaks For You</h1>
+            </div>
+            <div>
+                <p class="text-2xl font-serif hidden md:flex">||Discover trendy fashion, premium quality, and styles
+                    made
+                    for every
+                    occasion.</p>
+            </div>
+        </div>
+        <!--promise-->
+
+        <div class="p-2 pt-15 flex justify-around flex-wrap md:flex-nowrap gap-2">
+            <div class="bg-green-100 rounded p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <p class="text-2xl font-bold">Orginal Products</p>
+                <p>We offer authentic and high-quality products carefully selected for you.</p>
+            </div>
+            <div class="bg-green-100 rounded p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                </svg>
+                <p class="text-2xl font-bold">Satisfaction Gurantee</p>
+                <P>Your satisfaction is our priority. Enjoy a smooth and reliable shopping experience.</P>
+            </div>
+            <div class="bg-green-100 rounded p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                </svg>
+                <p class="text-2xl font-bold">New arrival everyday</p>
+                <p>Discover fresh styles and the latest fashion trends added to our collection regularly.</p>
+            </div>
+            <div class="bg-green-100 rounded p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                </svg>
+                <p class="text-2xl font-bold">Faast & Free shipping</p>
+                <p>Get your favorite products delivered quickly and safely right to your doorstep.</p>
+            </div>
+
+        </div>
+
+        <!-- New Arrival -->
+<div id="new-arrival" class="p-5 pt-10 text-center">
+
+    <p class="text-xl font-stretch-50%">
+        Explore collections
+    </p>
+
+    <P class="text-7xl font-serif">
+        Shop By Category
+    </P>
+
+    <p class="pt-2">
+        Discover styles for every occasions
+    </p>
+
+</div>
+        <!-- Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 p-3 md:p-5">
+
+            <!-- Card 1 -->
+            <div class="bg-orange-200 h-70 md:h-95 p-3 md:p-5">
+                <div class="h-40 md:h-65 flex justify-center items-center">
+                    <img class="w-35 h-40 md:w-50 md:h-65 object-contain" src="./images/image.png">
+                </div>
+
+                <h2 class="text-xl md:text-2xl font-bold">Shirts</h2>
+                <p class="text-sm md:text-base">Casual to classy</p>
+                <p class="underline text-sm md:text-base">Shop Now!</p>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="bg-olive-400 h-70 md:h-95 p-3 md:p-5">
+                <div class="h-40 md:h-65 flex justify-center items-center">
+                    <img class="w-35 h-40 md:w-50 md:h-65 object-contain" src="./images/btm.png">
+                </div>
+
+                <h2 class="text-xl md:text-2xl font-bold">Bottoms</h2>
+                <p class="text-sm md:text-base">Comfort in Every mode</p>
+                <p class="underline text-sm md:text-base">Shop Now!</p>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="bg-sky-200 h-70 md:h-95 p-3 md:p-5">
+                <div class="h-40 md:h-65 flex justify-center items-center">
+                    <img class="w-35 h-40 md:w-50 md:h-65 object-contain" src="./images/classic.png">
+                </div>
+
+                <h2 class="text-xl md:text-2xl font-bold">Casual Shirts</h2>
+                <p class="text-sm md:text-base">Everyday Essentials</p>
+                <p class="underline text-sm md:text-base">Shop Now!</p>
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="bg-yellow-50 h-70 md:h-95 p-3 md:p-5">
+                <div class="h-40 md:h-65 flex justify-center items-center">
+                    <img class="w-35 h-40 md:w-50 md:h-65 object-contain" src="./images/hoodie.png">
+                </div>
+
+                <h2 class="text-xl md:text-2xl font-bold">Hoodies</h2>
+                <p class="text-sm md:text-base">Comfort meets style</p>
+                <p class="underline text-sm md:text-base">Shop Now!</p>
+            </div>
+
+        </div>
+        <div>
+            <h1 class="p-5 text-3xl font-bold">Most Wanted</h1>
+        </div>
+        
+
+        <!-- Most Wanted / Sale Cards -->
+
+        <div id="mostwanted" class="p-5 flex gap-5 overflow-x-auto ">
+
+            <!-- Card 1 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/hoodieg.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class=" heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/btm2.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class=" heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/pull.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/jacket.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class=" heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/tshirt.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/hoo.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 7 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/blp.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 8 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/swert.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 9 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/card9.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="heart size-8 absolute bottom-3 right-3 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+
+
+            <!-- Card 10 -->
+            <div class="bg-blue-50 w-50 h-65 md:h-85  md:w-72 p-2 relative flex-shrink-0">
+
+                <div class="bg-red-500 w-17 px-2 rounded">
+                    <p class="text-2xl font-bold text-white">sale</p>
+                </div>
+
+                <img class="w-50 h-65 object-contain mx-auto" src="./images/card10.png">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="heart size-8 absolute bottom-3 right-3 cursor-pointer transform duration-1000">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+
+            </div>
+        </div>
+        <!--add section-->
+        <div class="bg-blue-950">
+            <div class="p-10 pt-10 flex justify-around items-center gap-10 md:gap-0 ">
+                <div>
+                    <img class=" w-110 h-50 md:w-150 md:h-90 " src="./images/add.png">
+                </div>
+                <div class="">
+                    <p class=" text-2xl sm:text-5xl font-bold text-white ">Limited Offer</p>
+                    <p class=" text -xl sm:text-3xl font-bold text-white pt-0.5 pb-2">35% OFF on this for the first 30
+                        customers</p>
+                    <P class="bg-white text-black rounded p-2 w-25">Shop now!</P>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Newsletter-->
+        <!-- Newsletter -->
+        <div class="p-5 pt-10 text-center">
+
+            <p class="text-3xl md:text-4xl font-bold">
+                Join Our News Letter
+            </p>
+
+            <p class="text-lg md:text-xl mt-4">
+                Signup for our email newspaper to get exclusive discount, updates and more!!!
+            </p>
+
+            <input class="w-full mt-5 p-3 border-2 border-gray-800 outline-none" type="email"
+                placeholder="Enter your email...">
+
+            <button class="bg-blue-950 text-white p-2 mt-5 rounded font-semibold" type="button">
+                Subscribe →
+            </button>
+
+        </div>
+
+        <!--footer-->
+        <div class="p-8 bg-blue-950">
+            <h1 class="text-5xl font-bold pt-3 text-white">Nostra</h1>
+            <p class="text-2xl  pt-3 text-white">Nostra brings you stylish, comfortable, and quality fashion for every
+                occasion.</p>
+            <div class="flex gap-10  pt-3 text-white">
+                <svg class="w-15 h-15 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+
+                <svg class="w-15 h-15 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                    </path>
+                </svg>
+
+                <svg class="w-15 h-15 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </div>
+            <div class="text-xl pt-3 flex-">
+                <p class="text-white ">&copy; 2026 Nostra.com</p>
+            </div>
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+
+    </html>
