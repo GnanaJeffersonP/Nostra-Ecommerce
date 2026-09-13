@@ -14,11 +14,7 @@
 
     <title>Nostra</title>
 </head>
-
-<body>
-
-    <!--offer section-->
- <body>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
 
     <!-- Offer Section -->
     <div id="offer"
@@ -41,87 +37,107 @@
         </svg>
 
     </div>
-        <!-- top section -->
-        <nav class="flex p-5 justify-between z-50  sticky top-0 items-center text-blue-950 bg-white shadow-2xl">
 
-            <h1 class="text-3xl font-bold">Nostra</h1>
 
-            <div class="flex gap-30 cursor-pointer hidden md:flex">
+    <!-- Navbar -->
+    <nav class="flex p-5 justify-between z-50 sticky top-0 items-center text-blue-950 bg-white shadow-2xl">
 
-                <a href="./index.html"
-                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
-                    Home
-                </a>
+        <h1 class="text-3xl font-bold">Nostra</h1>
 
-                <a href="#new-arrival"
-                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
-                    New Arrival
-                </a>
+        <!-- Desktop Navigation -->
+        <div class="flex gap-30 cursor-pointer hidden md:flex">
 
-                <a href="#mostwanted"
-                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
-                    Most Wanted
-                </a>
+            <a href="./index.html"
+                class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                Home
+            </a>
 
-                <a href="./collection.html"
-                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
-                    Collections
-                </a>
+            <a href="#new-arrival"
+                class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                New Arrival
+            </a>
 
-                <a href="./contact.html"
-                    class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
-                    Contact Us
-                </a>
+            <a href="#mostwanted"
+                class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                Most Wanted
+            </a>
 
-            </div>
+            <a href="./collection.html"
+                class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                Collections
+            </a>
 
-            <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6 flex md:hidden cursor-pointer">
+            <a href="./contact.html"
+                class="hover:bg-blue-950 hover:text-white transform duration-1000 px-4 rounded-2xl">
+                Contact Us
+            </a>
 
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </div>
+
+
+        <!-- Theme + Hamburger -->
+        <div class="flex items-center gap-5">
+
+            <button id="themeBtn" class="text-xl cursor-pointer">
+                🌙
+            </button>
+
+            <svg id="menubar"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 flex md:hidden cursor-pointer">
+
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 
             </svg>
 
-        </nav>
-
-
         </div>
-        <!--Sidemenu-->
-  <div id="sidemenu"
-    class="fixed z-20 flex flex-col gap-5 p-5 bg-blue-950 cursor-pointer transform duration-1000"
-    style="width:50%;height:100vh;left:-50%">
 
-    <p id="closemenu"
-        class="text-white font-bold text-2xl absolute right-3">
-        X
-    </p>
+    </nav>
 
-    <a href="./index.html"
-        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
-        Home
-    </a>
 
-    <a href="#new-arrival"
-        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
-        New Arrival
-    </a>
+    <!-- Side Menu -->
+    <div id="sidemenu"
+        class="fixed z-20 flex flex-col gap-5 p-5 bg-blue-950 cursor-pointer transform duration-1000"
+        style="width:50%;height:100vh;left:-50%">
 
-    <a href="#mostwanted"
-        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
-        Most Wanted
-    </a>
+        <p id="closemenu"
+            class="text-white font-bold text-2xl absolute right-3">
+            X
+        </p>
 
-    <a href="./collection.html"
-        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
-        Collections
-    </a>
+        <a href="./index.html"
+            class="text-white hover:underline transform duration-1000 p-3 rounded-2xl">
+            Home
+        </a>
 
-    <a href="./contact.html"
-        class="text-white hover:bg-white hover:text-blue-950 p-3 rounded-2xl">
-        Contact Us
-    </a>
+        <a href="#new-arrival"
+            class="text-white hover:underline transform duration-1000 p-3 rounded-2xl">
+            New Arrival
+        </a>
 
-</div>
+        <a href="#mostwanted"
+            class="text-white hover:underline transform duration-1000 p-3 rounded-2xl">
+            Most Wanted
+        </a>
+
+        <a href="./collection.html"
+            class="text-white hover:underline transform duration-1000 p-3 rounded-2xl">
+            Collections
+        </a>
+
+        <a href="./contact.html"
+            class="text-white hover:underline transform duration-1000 p-3 rounded-2xl">
+            Contact Us
+        </a>
+
+    </div>
+<!--image-->
 
         <div class="p-5 relative">
 
@@ -163,7 +179,7 @@
 
         </div>
 
-        <!--Brands-->
+        
         <!-- Brands -->
         <div class="p-5">
 
@@ -177,7 +193,7 @@
                 </div>
 
                 <div class="text-center">
-                    <img class="w-12 h-12 object-contain mx-auto md:w-30 md:h-30" src="./images/allen.png">
+                    <img class="w-12 h-12 object-contain mx-auto md:w-30 md:h-30" src="./images/sollybg.png">
                     <p class="text-sm md:text-2xl">Allen Solly</p>
                 </div>
 
@@ -221,7 +237,7 @@
         <!--promise-->
 
         <div class="p-2 pt-15 flex justify-around flex-wrap md:flex-nowrap gap-2">
-            <div class="bg-green-100 rounded p-3">
+            <div class="bg-green-100 dark:bg-amber-100 dark:text-black rounded p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-8">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -230,7 +246,7 @@
                 <p class="text-2xl font-bold">Orginal Products</p>
                 <p>We offer authentic and high-quality products carefully selected for you.</p>
             </div>
-            <div class="bg-green-100 rounded p-2">
+            <div class="bg-green-100 dark:bg-amber-100 dark:text-black rounded p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-8">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -239,7 +255,7 @@
                 <p class="text-2xl font-bold">Satisfaction Gurantee</p>
                 <P>Your satisfaction is our priority. Enjoy a smooth and reliable shopping experience.</P>
             </div>
-            <div class="bg-green-100 rounded p-2">
+            <div class="bg-green-100 dark:bg-amber-100 dark:text-black rounded p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-8">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -248,7 +264,7 @@
                 <p class="text-2xl font-bold">New arrival everyday</p>
                 <p>Discover fresh styles and the latest fashion trends added to our collection regularly.</p>
             </div>
-            <div class="bg-green-100 rounded p-2">
+            <div class="bg-green-100 dark:bg-amber-100 dark:text-black rounded p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-8">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -259,6 +275,7 @@
             </div>
 
         </div>
+    
 
         <!-- New Arrival -->
 <div id="new-arrival" class="p-5 pt-10 text-center">
@@ -333,7 +350,7 @@
         
 
         <!-- Most Wanted / Sale Cards -->
-
+<div >
         <div id="mostwanted" class="p-5 flex gap-5 overflow-x-auto ">
 
             <!-- Card 1 -->
@@ -516,6 +533,7 @@
 
             </div>
         </div>
+        </div>
         <!--add section-->
         <div class="bg-blue-950">
             <div class="p-10 pt-10 flex justify-around items-center gap-10 md:gap-0 ">
@@ -532,7 +550,6 @@
         </div>
 
 
-        <!--Newsletter-->
         <!-- Newsletter -->
         <div class="p-5 pt-10 text-center">
 

@@ -1,9 +1,27 @@
+
 var offer=document.getElementById("offer")
 var closeicon=document.getElementById("closeicon")
 
 closeicon.addEventListener("click",function(){
     offer.style.display="none"
 })
+
+//dark/white
+var themeBtn = document.getElementById("themeBtn")
+
+themeBtn.addEventListener("click", function(){
+
+    document.body.classList.toggle("dark")
+
+    if(document.body.classList.contains("dark")){
+        themeBtn.textContent = "☀️"
+    }
+    else{
+        themeBtn.textContent = "🌙"
+    }
+
+})
+    
 //Menu
 
 var sidemenu=document.getElementById("sidemenu")

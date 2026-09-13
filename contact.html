@@ -8,53 +8,97 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
     <!-- Navbar -->
     <nav class="flex justify-between items-center p-5 sticky top-0 z-50 shadow-2xl bg-white">
 
-        <h1 class="text-3xl font-bold">Nostra</h1>
+        <h1 class="dark:text-black  text-3xl font-bold">Nostra</h1>
 
-        <div class="flex gap-8">
-            <a href="./index.html">Home</a>
-            <a href="./collection.html">Collections</a>
-            <a href="./contact.html">Contact Us</a>
+        <div class="hidden md:flex gap-10 ">
+            <a class="dark:text-black  hover:bg-blue-950 hover:text-white px-2 transform duration-700 rounded" href="./index.html">Home</a>
+            <a class="dark:text-black  hover:bg-blue-950 hover:text-white px-2 transform duration-700 rounded" href="./collection.html">Collections</a>
+            <a class="dark:text-black  hover:bg-blue-950 hover:text-white px-2 transform duration-700 rounded" href="./contact.html">Contact Us</a>
+        </div>
+            <!-- Theme + Hamburger -->
+        <div class="flex items-center gap-5">
+
+            <button id="themeBtn" class="text-xl cursor-pointer">
+                🌙
+            </button>
+
+            <svg id="menubar"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 flex md:hidden cursor-pointer dark:text-black">
+
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
+            </svg>
+
         </div>
 
     </nav>
 
+    <!--Sidemenu-->
+    <div id="sidemenu" class="fixed z-20 flex flex-col gap-5 p-5 bg-blue-950 cursor-pointer transform duration-1000"
+        style="width:50%;height:100vh;left:-50%">
+
+        <p id="closemenu" class="text-white font-bold text-2xl absolute right-3">
+            X
+        </p>
+
+        <a href="./index.html" class="text-white hover:underline transform duration-1000  p-3 rounded-2xl">
+            Home
+        </a>
+
+        <a href="./collection.html" class="text-white hover:underline transform duration-1000 0 p-3 rounded-2xl">
+            Collections
+        </a>
+
+        <a href="./contact.html" class="text-white hover:underline transform duration-1000  p-3 rounded-2xl">
+            Contact Us
+        </a>
+
+    </div>
+
     <!--contact us-->
-    <div class="bg-gray-100">
+    <div class="bg-gray-100 dark:bg-gray-200 ">
         <div class="container mx-auto py-12">
             <div class="max-w-lg mx-auto px-4">
-                <h2 class="text-3xl font-semibold text-gray-900 mb-4">
+                <h2 class="text-3xl font-semibold text-black mb-4 dark:text-black">
                     How can we help you
                 </h2>
-                <p class="text-gray-700 mb-8">
+                <p class="text-black mb-8 dark:text-black">
                     Contact us for any questions, support, or assistance—we’re always happy to help you with your Nostra
                     shopping experience.
                 </p>
-                <form class="bg-white rounded-lg px-6 py-8 shadow-md">
+                <form class="bg-white rounded-lg px-6 py-8 shadow-md dark:bg-blue-950 dark:text-white">
                     <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
+                        <label class="block text-gray-700 font-bold mb-2 dark:text-white" for="name">Name</label>
                         <input
-                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:bg-white leading-tight focus:outline-none focus:shadow-outline"
                             id="name" type="text" placeholder="Enter your name">
                     </div>
                     <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+                        <label class="block text-gray-700 font-bold mb-2 dark:text-white" for="email">Email</label>
                         <input
-                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white"
                             id="email" type="email" placeholder="Enter your email">
                     </div>
                     <div class="mb-4">
-                        <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+                        <label class="block text-gray-700 font-bold mb-2 dark:text-white" for="message">Message</label>
                         <textarea
-                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white"
                             id="message" rows="6" placeholder="Enter your message"></textarea>
                     </div>
                     <div class="flex justify-end">
                         <button
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-white"
                             type="button">
                             Send
                         </button>
@@ -67,7 +111,7 @@
     <!-- Newsletter -->
     <div class="p-5 pt-10 text-center">
 
-        <p class="text-3xl md:text-4xl font-bold">
+        <p class="text-3xl md:text-4xl font-bold ">
             Join Our News Letter
         </p>
 
@@ -147,16 +191,16 @@
 
             <p class="text-white">
                 &copy; 2026 Nostra.com
-            </p> 
+            </p>
 
         </div>
 
-        </div>
+    </div>
 
 
 
 
-        <script src="contact.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>

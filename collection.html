@@ -8,7 +8,7 @@
     <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
 
     <!-- Offer Section -->
     <div id="offer"
@@ -28,24 +28,77 @@
 
 
     <!-- Navbar -->
-    <nav class="flex justify-between items-center p-5 bg-white sticky z-50 top-0 shadow-2xl">
+    <nav class="flex justify-between items-center p-5 bg-white  sticky z-50 top-0 shadow-2xl">
 
         <h1 class="text-3xl font-bold">Nostra</h1>
 
-        <div class="flex gap-8">
+        <div class=" hidden md:flex gap-10">
 
-            <a href="./index.html">Home</a>
+            <a class="dark:text-black hover:bg-blue-950 hover:text-white px-2 transform duration-700 rounded" href="./index.html">Home</a>
 
-            <a href="./collections.html">Collections</a>
+            <a class="dark:text-black hover:bg-blue-950 hover:text-white px-2 transform duration-700 rounded" href="./collections.html">Collections</a>
 
-            <a href="./contact.html">Contact Us</a>
+            <a class="dark:text-black hover:bg-blue-950 hover:text-white px-2 transform duration-700 rounded" href="./contact.html">Contact Us</a>
+
+            
+
+        </div>
+
+       <div class="flex items-center gap-5">
+
+            <button id="themeBtn" class="text-xl cursor-pointer">
+                🌙
+            </button>
+
+            <svg id="menubar"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 flex md:hidden cursor-pointer">
+
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
+            </svg>
 
         </div>
 
     </nav>
 
     
+
+    
     <hr class="border-black">
+   <!--Sidemenu-->
+  <div id="sidemenu"
+    class="fixed z-20 flex flex-col gap-5 p-5 bg-blue-950 cursor-pointer transform duration-1000"
+    style="width:50%;height:100vh;left:-50%">
+
+    <p id="closemenu"
+        class="text-white font-bold text-2xl absolute right-3">
+        X
+    </p>
+
+    <a href="./index.html"
+        class="text-white hover:underline transform duration-1000 p-3 rounded-2xl">
+        Home
+    </a>
+
+    <a href="./collection.html"
+        class="text-white hover:underline transform duration-1000 p-3 rounded-2xl">
+        Collections
+    </a>
+
+    <a href="./contact.html"
+        class="text-white hover:underline transform duration-1000 p-3 rounded-2xl">
+        Contact Us
+    </a>
+
+</div>
+
 
 
     <!-- Collections Main Section -->
